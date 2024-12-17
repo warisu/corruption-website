@@ -1,0 +1,28 @@
+import React from 'react';
+
+function Button({ text, onClick, color = 'white', bgColor = 'blue', size = 'medium', disabled = false }) {
+  const sizes = {
+    small: '8px 16px',
+    medium: '10px 20px',
+    large: '14px 28px',
+  };
+
+  const buttonStyle = {
+    backgroundColor: bgColor,
+    color: color,
+    padding: sizes[size],
+    border: 'none',
+    borderRadius: '5px',
+    cursor: disabled ? 'not-allowed' : 'pointer',
+    opacity: disabled ? 0.5 : 1,
+  };
+
+  return (
+    <button onClick={onClick} style={buttonStyle} disabled={disabled}>
+      {text}
+    </button>
+  );
+}
+
+export default Button;
+
