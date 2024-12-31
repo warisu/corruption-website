@@ -25,4 +25,3 @@ function Button({ text, onClick, color = 'white', bgColor = 'blue', size = 'medi
 }
 
 export default Button;
-

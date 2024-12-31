@@ -1,0 +1,15 @@
+.header {
+  background: #BBBBBB;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  border: 1.2px solid;
+  /*min-height: 75px;
+  top: 0;*/
+}
+
+.header .logo h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
